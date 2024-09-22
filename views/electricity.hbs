@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Usage Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <div class="header">
+        <div class="left-header">
+            <label for="check">
+                <i class='bx bx-filter' id="nav-side_btn"></i>
+            </label>
+        </div>  
+    </div> 
+    <div class="main-content">
+        <div class="header-content">
+            <div class="header-menu">
+                <label for="">
+                    <span class="las la-search"></span>
+                </label>
+                <div class="notify-icon">
+                    <span class="bx bxs-envelope"></span>
+                    <span class="notify">4</span>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="side-nav">
+        <h3>SUSTAINA</h3>
+        <div class="logo">
+            <img src="sus.jpg" alt="Logo" class="image">
+        </div>
+        <a href="onboard.html" class="anchor"><i class='bx bxs-home'></i><span>Home</span></a>
+        <a href="#"><i class="fa fa-desktop"></i><span>Dashboard</span></a>  
+        <a href="#"><i class="fa fa-bar-chart"></i><span>Analytics</span></a>
+        <a href="/water" class="anchor"><i class="bx bx-water"></i><span>Water</span></a>
+        <a href="/contact" class="anchor"><i class='bx bxs-contact'></i><span>Contact Us</span></a>
+        <a href="/about" class="anchor"><i class="bx bx-group"></i><span>About Sustaina</span></a>
+    </div>
+
+    <div class="flex-container">
+        <div class="box">
+            <i class='bx bx-calendar-check'></i>
+            <h3>Today's Consumption</h3>
+            <p>50 kWh</p>
+        </div>
+        <div class="box">
+            <i class='bx bx-calendar'></i>
+            <h3>Monthly Consumption</h3>
+            <p>500 kWh</p>
+        </div>
+        <div class="box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Highest Consumption</h3>
+            <p>70 kWh</p>
+        </div>
+        <div class="box">
+            <i class='bx bx-line-chart'></i>
+            <h3>Average Consumption</h3>
+            <p>45 kWh</p>
+        </div>   
+    </div>
+
+    <table class="table">
+        <tr>
+          <th> + DEVICES</th>
+          <th>CONSUMPTION</th>
+          <th>STATUS</th>
+        </tr>
+        <tr>
+            <td>Air Conditioner</td>
+            <td>20 kWh</td>
+            <td>Currently ON</td>
+        </tr>
+        <tr>
+            <td>Heater</td>
+            <td>15 kWh</td>
+            <td>Currently OFF</td>
+        </tr>
+        <tr>
+            <td>Fridge</td>
+            <td>5 kWh</td>
+            <td>Currently ON</td>
+        </tr>
+        <tr>
+            <td>Lights</td>
+            <td>10 kWh</td>
+            <td>Currently OFF</td>
+        </tr>
+    </table>
+
+    <section class="hero-section">
+        <div class="content">
+            <form action="#" class="search-form">
+                <input type="text" placeholder="Search for any service..." required>
+                <button class="material-symbols-outlined" type="submit">search</button>
+            </form>
+        </div>  
+    </section>
+
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="pg.jpg" alt="">
+        </div>
+
+        <div class="menu">
+            <h3>User Account</h3>
+            <ul>
+                <li>
+                    <i class='bx bxl-product-hunt'></i>
+                    <a href="#">My Profile</a>
+                </li>
+                <li>
+                    <i class='bx bx-edit-alt'></i>
+                    <a href="edit.html" class="anchor">Edit Account</a>
+                </li>
+                <li>
+                    <i class='bx bx-log-out'></i>
+                    <a href="signin.html" class="anchor">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+        $(document).ready(function(){
+            $(".notify_icon .bxs-bell").click(function(){
+                $(".dropdown").toggleClass("active");
+            });
+        });
+    </script>
+</body>
+</html>

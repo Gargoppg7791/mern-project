@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="signup_form">
+            <h1>Create Account</h1>
+            <p>Join us to discover all sustainable usage insights</p>
+            <form action="/register" class="sign_up" method="POST">
+                <div class="input_box">
+                    <input type="text" name="Username" placeholder="Username" required>
+                </div>
+                <div class="input_box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input_box">
+                    <input type="number" name="number" placeholder="Mobile No." required>
+                </div>
+                <div class="input_box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input_box">
+                    <input type="password" name="confirmpassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="button">Sign Up</button>
+                <div class="login_link">
+                    <p>Already have an account? <a href="/signin" class="anchor" id="login">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

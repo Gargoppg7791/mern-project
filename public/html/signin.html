@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/css/signin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="signup_form">
+            <h1>Login here</h1>
+            <p>Welcome back, you've been missed!</p>
+            <form action="/login" class="sign_up" method="POST"> <!-- Updated form action -->
+                <div class="input_box">
+                    <input type="number" name="number" placeholder="Mobile No." required> <!-- Mobile Number -->
+                </div>
+                <div class="input_box">
+                    <input type="password" name="password" placeholder="Password" required> <!-- Password -->
+                </div>
+                <button type="submit" class="button">Sign in</button>
+                <div class="login_link">
+                    <p>Don't have an account? <a href="signup.html" class="anchor" id="signup">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
